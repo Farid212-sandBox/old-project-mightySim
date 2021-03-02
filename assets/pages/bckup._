@@ -1,0 +1,52 @@
+<?php
+
+if (isset($_POST['lastName']) && isset($_POST['email']) && isset($_POST['simID']) && isset($_POST['purchaseDatePart1']) && isset($_POST['purchasePlanPart2']) && isset($_POST['purchasePlanPart3']) && isset($_POST['submit']))
+{
+ if(!empty($_POST['lastName']) && !empty($_POST['email']) && !empty($_POST['simID']) && !empty($_POST['purchaseDatePart1']) && !empty($_POST['purchasePlanPart2']) && !empty($_POST['purchasePlanPart3']) 
+    && !empty($_POST['submit'])){
+    $name = htmlspecialchars($_POST['lastName'], ENT_NOQUOTES);
+    $email = htmlspecialchars($_POST['email'], ENT_NOQUOTES);
+    $simID = htmlspecialchars($_POST['simID'], ENT_NOQUOTES);
+    $purchaseDatePart1 = htmlspecialchars($_POST['purchaseDatePart1'], ENT_NOQUOTES);
+    $purchasePlanPart2 = htmlspecialchars($_POST['purchasePlanPart2'], ENT_NOQUOTES);
+    $purchasePlanPart3 = htmlspecialchars($_POST['purchasePlanPart3'], ENT_NOQUOTES);
+    //body
+
+    echo $name;
+    echo $email;
+    echo $simID;
+
+    $to = "vocamabupe@nickrizos.com";
+    $subject = "MightySIM receipt issue request: $simID";
+    $body = "You have received a new message. ".
+        " Here are the details:\n 
+        Name: $lastName \n 
+        email: $email \n 
+        SIM ID: $simID \n 
+        Purchase Date: $purchaseDatePart1 \n 
+        Purchase Plan: $purchasePlanPart2 \n
+        Plan: $purchasePlanPart3"; 
+    //headers
+    $headers = "From: " . $name . " <" . $email . ">\r\n";
+    $headers .= "Reply-To: " . $email . "\r\n";
+    $headers .= "Mime-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset-utf-8";
+
+    //send email
+
+    $send = mail($to, $subject, $body, $headers);
+        if($send){
+            echo '<br>';
+            echo 'We will solve your issues as soon as possible';
+        } else {
+            echo 'error';
+        }
+    }
+    else{
+        echo 'Missing element';
+    }
+} else {
+    echo 'element not existing';
+}
+
+?>

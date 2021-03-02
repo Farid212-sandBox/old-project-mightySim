@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:600,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,700");
+@import url("https://fonts.googleapis.com/css?family=Bitter:700");
+.navbar-custom {
+  background: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+  .navbar-custom .container .icon-bar {
+    width: 22px;
+    height: 1px;
+    color: white; }
+  .navbar-custom #navigationBar ul li .dropdown-menu .dropdown-item {
+    color: #8f73bd; }
+  .navbar-custom #navigationBar ul li .dropdown-menu .dropdown-item:hover {
+    color: #6b4da8; }
+  .navbar-custom #navigationBar ul li a {
+    padding: 0 4vh;
+    color: white; }
+  .navbar-custom #navigationBar ul li a:hover {
+    color: #6b4da8; }
+
+#logoMenu {
+  height: 4vh; }
+
+hr {
+  height: 4px;
+  width: 70px;
+  text-align: center;
+  position: relative;
+  background: #6b4da8;
+  background: -moz-linear-gradient(left, #6b4da8 0%, #4977c2 100%);
+  background: -webkit-linear-gradient(left, #6b4da8 0%, #4977c2 100%);
+  background: linear-gradient(to right, #6b4da8 0%, #4977c2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1);
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 0; }
+
+.overlay {
+  width: 100%;
+  background: rgba(107, 77, 168, 0.75); }
+
+.padall {
+  padding-top: 10vh !important;
+  padding-bottom: 10vh !important; }
+
+.btn-default {
+  border: 1px solid #6b4da8;
+  background: white;
+  box-shadow: 0 0 0.5rem #fafafa;
+  color: #8f73bd; }
+
+.btn-default:hover {
+  color: white;
+  background: #6b4da8;
+  box-shadow: 0 0 0.5rem #02f33e;
+  transform: none; }
+
+.txt-shadow {
+  text-shadow: 0 0 0.5rem #fafafa; }
+
+#issues .btn-default svg:hover {
+  color: white; }
+
+.section-title {
+  font-family: 'Bitter', serif;
+  font-size: 3rem !important; }
+
+.item :hover {
+  cursor: pointer; }
+.item .question {
+  font-family: 'Dosis', sans-serif; }
+  .item .question i {
+    color: #8f73bd; }
+.item .answer {
+  font-family: 'Lato', sans-serif; }
+
+#item-left-top:hover {
+  -webkit-box-shadow: -5px -5px 20px -5px #8246af;
+  -moz-box-shadow: -5px -5px 20px -5px #8246af;
+  box-shadow: -5px -5px 20px -5px #8246af;
+  padding: 10px;
+  border-radius: 10px; }
+
+.item-left:hover {
+  -webkit-box-shadow: -6px 0px 20px -5px #8246af;
+  -moz-box-shadow: -6px 0px 20px -5px #8246af;
+  box-shadow: -6px 0px 20px -5px #8246af;
+  padding: 10px; }
+
+#item-left-bot:hover {
+  -webkit-box-shadow: -5px 7px 20px -5px #8246af;
+  -moz-box-shadow: -5px 7px 20px -5px #8246af;
+  box-shadow: -5px 7px 20px -5px #8246af;
+  padding: 10px;
+  border-radius: 10px; }
+
+#item-right-top:hover {
+  -webkit-box-shadow: 5px -5px 20px -5px #8246af;
+  -moz-box-shadow: 5px -5px 20px -5px #8246af;
+  box-shadow: 5px -5px 20px -5px #8246af;
+  padding: 10px;
+  border-radius: 10px; }
+
+.item-right:hover {
+  -webkit-box-shadow: 6px 0px 20px -5px #8246af;
+  -moz-box-shadow: 6px 0px 20px -5px #8246af;
+  box-shadow: 6px 0px 20px -5px #8246af;
+  padding: 10px; }
+
+#item-right-bot:hover {
+  -webkit-box-shadow: 5px 7px 20px -5px #8246af;
+  -moz-box-shadow: 5px 7px 20px -5px #8246af;
+  box-shadow: 5px 7px 20px -5px #8246af;
+  padding: 10px;
+  border-radius: 10px; }
+
+#inquiry p {
+  font-family: 'Lato', sans-serif; }
+
+.white {
+  color: white; }
+
+.headerList {
+  list-style-type: none; }
+
+#footer {
+  background: black;
+  color: white; }
+  #footer .fnav a {
+    color: #8f73bd; }
+  #footer a:hover {
+    color: #6b4da8;
+    text-decoration: none; }
+
+.social-links {
+  list-style-type: none;
+  color: white;
+  text-align: center; }
+  .social-links :hover {
+    color: #6b4da8; }
+
+/*# sourceMappingURL=support.css.map */

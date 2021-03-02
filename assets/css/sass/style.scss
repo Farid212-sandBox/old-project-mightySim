@@ -1,0 +1,279 @@
+// variable
+$petit-violet: rgb(143, 115, 189);
+$gros-violet: rgb(107, 77, 168);
+@import url('https://fonts.googleapis.com/css?family=Dosis:600,700');
+// font-family: 'Dosis', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700');
+// font-family: 'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Bitter:700');
+// font-family: 'Bitter', serif;
+// stiky script
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.white {
+    color: white;
+}
+
+hr {
+    height: 4px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    background: rgb(107, 77, 168);
+    background: -moz-linear-gradient( left, rgba(107, 77, 168, 1) 0%, rgba(73, 119, 194, 1) 100%);
+    background: -webkit-linear-gradient( left, rgba(107, 77, 168, 1) 0%, rgba(73, 119, 194, 1) 100%);
+    background: linear-gradient( to right, rgba(107, 77, 168, 1) 0%, rgba(73, 119, 194, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b4da8', endColorstr='#4977c2', GradientType=1);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    header {
+        height: 100%;
+        width: 100%;
+        .intro {
+            height: 92%;
+            width: 100%;
+            background: url(../img/adventure.jpg);
+            background-repeat: no-repeat;
+            background-size: 110%;
+            .overlay {
+                height: 100%;
+                width: 100%;
+                background: rgba(107, 77, 168, 0.75);
+            }
+        } // Navigation bar
+        .navbar-custom {
+            background: black;
+            .container .icon-bar {
+                width: 22px;
+                height: 1px;
+                color: white;
+            }
+            #navigationBar {
+                ul li .dropdown-menu {
+                    .dropdown-item {
+                        color: $petit-violet;
+                    }
+                    .dropdown-item:hover {
+                        color: $gros-violet;
+                    }
+                }
+                ul li a {
+                    padding: 0 4vh;
+                    color: white;
+                }
+                ul li a:hover {
+                    color: $gros-violet;
+                }
+            }
+        }
+    }
+}
+
+.btn-default {
+    border: 1px solid $gros-violet;
+    background: white;
+    box-shadow: 0 0 0.5rem rgb(250, 250, 250);
+    color: $petit-violet;
+}
+
+.btn-default:hover {
+    color: white;
+    background: $gros-violet;
+    box-shadow: 0 0 0.5rem rgb(2, 243, 62);
+    transform: none;
+}
+
+.overlay {
+    width: 100%;
+    background: rgba(107, 77, 168, 0.75);
+}
+
+.headerList {
+    list-style-type: none;
+}
+
+#headerLogo {
+    background: rgba(250, 250, 250, 0.8);
+    border-radius: 1rem;
+    border: rgb(252, 248, 248) 2px solid;
+    box-shadow: 0 0 0.5rem rgb(250, 250, 250);
+}
+
+#headerText {
+    color: white;
+}
+
+#logoMenu {
+    height: 4vh;
+}
+
+.padall {
+    padding-top: 10vh !important;
+    padding-bottom: 10vh !important;
+}
+
+#features {
+    margin-top: 6rem;
+}
+
+// iphone 5/SE
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    /* STYLES GO HERE */
+    body {
+        height: 100vh;
+        width: 100%;
+        h2,
+        h3 {
+            font-size: 3vh;
+        }
+        a {
+            font-size: 2vh;
+        }
+        p {
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+        }
+        li {
+            font-size: 13px;
+        }
+        .productCard {
+            margin-bottom: 15%;
+        }
+        .modal-dialog {
+            max-width: 300px !important;
+            margin: 1.75rem auto;
+            max-height: 200px !important;
+        }
+    }
+    body header .intro {
+        height: 90%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 110%;
+    }
+    body header .intro {
+        background: none !important;
+    }
+    .blocLogo {
+        margin-bottom: 10%;
+    }
+    #headerLogo {
+        width: 65%;
+        height: 100%;
+    }
+    .fnav {
+        font-size: 8px;
+    }
+}
+
+.fb-like-box,
+.fb-like-box span,
+.fb-like-box iframe {
+    width: 100% !important;
+}
+
+.productCard:hover {
+    box-shadow: 0 0 0.5rem rgb(24, 100, 250);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.productCard button {
+    background: $petit-violet;
+    border: 1px solid $petit-violet;
+}
+
+.productCard button:hover {
+    background: $gros-violet;
+    border: 1px solid greenyellow;
+}
+
+.toModify {
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.toModify:hover {
+    transform: scale(1.1);
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    color: $gros-violet;
+}
+
+// footer
+#footer {
+    background: black;
+    color: white;
+    .fnav a {
+        color: $petit-violet;
+    }
+    a:hover {
+        color: $gros-violet;
+        text-decoration: none;
+    }
+}
+
+.social-links {
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    :hover {
+        color: $gros-violet;
+    }
+}
+
+.txt-shadow {
+    text-shadow: 0 0 0.5rem rgb(250, 250, 250);
+}
+
+.icon {
+    color: $petit-violet;
+    :hover {
+        color: $gros-violet;
+    }
+}
+
+// map zone
+#map {
+    height: 25rem;
+    width: 25rem;
+}
+
+#map2 {
+    height: 25rem;
+}
+
+#map3 {
+    height: 25rem;
+}
+
+.zone1 {
+    font-size: 11px;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
